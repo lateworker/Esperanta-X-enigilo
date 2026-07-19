@@ -201,8 +201,11 @@ ToggleStartup(itemName, *) {
         link.Save()
         autoStartup := !autoStartup
     }
-    newName := toggleName[autoStartup + 3] . " Starti ĉe lanĉo"
-    A_TrayMenu.Rename(itemName, newName)
+
+    if (itemName) {
+        newName := toggleName[autoStartup + 3] . " Starti ĉe lanĉo"
+        A_TrayMenu.Rename(itemName, newName)
+    }
 }
 
 SetIconTip(itemName, *) {
@@ -236,6 +239,12 @@ SetIconTip(itemName, *) {
             menuStyle := "Mallonga"
     }
 	
+}
+
+; 重置开机启动项，将开机启动快捷方式指向自己
+if (autoStartup) {
+    ToggleStartup("")
+    ToggleStartup("")
 }
 
 ; subMenu for menuStyle
