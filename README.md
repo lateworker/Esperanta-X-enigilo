@@ -14,4 +14,4 @@ Post lanĉo, la programo tuj aperas kiel piktogramo en la sistempleto. Ŝvebante
 
 # Elŝuti
 
-[Elŝuta ligilo](https://github.com/lateworker/Esperanta-X-enigilo/releases/tag/v0.1)
+[Elŝuta ligilo（下载链接）](https://github.com/lateworker/Esperanta-X-enigilo/releases/tag/v0.1)
